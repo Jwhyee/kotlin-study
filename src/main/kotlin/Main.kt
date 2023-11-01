@@ -1,11 +1,9 @@
 fun main(args: Array<String>) {
-    val stringValue = "one line string test"
-    val multiLineStringValue = """
-        multiline
-        string
-        test
-    """
+    var intArr = arrayOf(1, 2, 3, 4, 5)
 
-    println("stringValue = ${stringValue}")
-    println("multiLineStringValue = ${multiLineStringValue}")
+    var nullArr = arrayOfNulls<Int>(5)
+
+    intArr[2] = 8
+
+    println(intArr[2])
 }
