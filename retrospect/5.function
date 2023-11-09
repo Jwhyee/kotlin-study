@@ -1,0 +1,38 @@
+# 함수
+
+## Unit
+
+함수의 반환 타입에는 `Unit`을 사용할 수 있다. `Unit`은 자바에서의 `void`와 동일하다고 보면 된다.
+함수가 의미있는 반환값을 돌려주지 않는다는 뜻이다.
+
+아래 두 코드를 확인해보자.
+
+```kotlin
+fun main(args: Array<String>) {
+    var arr = intArrayOf(1, 2, 3)
+    increaseArr(arr, 1)
+    println(arr[1])
+}
+
+fun increaseArr(arr : IntArray, idx : Int) {
+    ++arr[idx]
+}
+
+fun increaseArr(arr : IntArray, idx : Int): Unit {
+    ++arr[idx]
+}
+```
+
+위 코드는 반환 값 없이 작업만 처리하는 함수이다.
+코드에서 보이는대로 `Unit`이라는 상수를 사용하거나, 명시하지 않을 경우 코틀린은 알아서 `Unit` 함수로 파악한다.
+
+자바와 같이 중간에 탈출하기 위해서는 아래와 같이 사용한다.
+
+```kotlin
+fun increaseArr(arr : IntArray, idx : Int) {
+    ++arr[idx]
+    if(arr[idx] == 1)
+        return Unit;
+    arr[idx] += 5
+}
+```
