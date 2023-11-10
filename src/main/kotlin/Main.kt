@@ -1,11 +1,16 @@
-fun main() {
-    val arr = intArrayOf(6, 3, 7, 8, 2)
-    println(arr)
-    printSorted(*arr)
-}
+import kotlin.random.Random
 
-fun printSorted(vararg items: Int) {
-    println(items)
-    items.sort()
-    println("items = ${items.contentToString()}")
+fun main() {
+    val num = Random.nextInt(1, 101)
+    outer@ while (true) {
+        var guess = readln().toInt()
+
+        val msg = when {
+            guess < num -> "up"
+            guess > num -> "down"
+            else -> break@outer
+        }
+        println(msg)
+    }
+    println("answer : $num")
 }
