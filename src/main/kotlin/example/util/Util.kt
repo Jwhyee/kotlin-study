@@ -1,5 +1,7 @@
 package example.util
 
+val prefix = "Hello, "
+
 class Util private constructor() {
     fun getRealTime(): Int = 10
 
