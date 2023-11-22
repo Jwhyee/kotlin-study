@@ -1,4 +1,4 @@
-package example.chapter4.chapter4_3
+package example.chapter4.chap4_3
 
 import example.util.prefix
 
