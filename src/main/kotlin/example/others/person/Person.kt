@@ -1,4 +1,4 @@
-package example.person
+package example.others.person
 
 class Person(val firstName: String, val familyName: String) {
     inner class Possession(val description: String) {

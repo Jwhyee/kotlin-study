@@ -1,6 +1,6 @@
 package example.chapter4.chap4_3
 
-import example.util.prefix
+import example.others.util.prefix
 
 fun main() {
     val name = readlnOrNull()  ?: return

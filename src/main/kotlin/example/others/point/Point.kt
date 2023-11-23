@@ -1,4 +1,4 @@
-package example.point
+package example.others.point
 
 fun main(args: Array<String>) {
     class Foo {
