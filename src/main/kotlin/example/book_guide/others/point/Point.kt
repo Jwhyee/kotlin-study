@@ -1,4 +1,4 @@
-package example.others.point
+package example.book_guide.others.point
 
 fun main(args: Array<String>) {
     class Foo {

@@ -1,4 +1,4 @@
-package example.others.util
+package example.book_guide.others.util
 
 val prefix = "Hello, "
 

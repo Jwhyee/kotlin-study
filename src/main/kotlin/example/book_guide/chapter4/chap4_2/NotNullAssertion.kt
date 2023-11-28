@@ -1,4 +1,4 @@
-package example.chapter4.chap4_2
+package example.book_guide.chapter4.chap4_2
 
 class Name(val firstName: String, val familyName: String?)
 class Person(val name: Name?) {

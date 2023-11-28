@@ -1,4 +1,4 @@
-package example.chapter4.chap4_4
+package example.book_guide.chapter4.chap4_4
 
 fun describe(app : Application) = app.name
 
