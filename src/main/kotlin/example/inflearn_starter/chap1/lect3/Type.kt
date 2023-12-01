@@ -1,4 +1,6 @@
-package example.inflearn_starter.chap1
+package example.inflearn_starter.chap1.lect3
+
+import example.inflearn_starter.chap1.lect2.Person
 
 fun main() {
     val num1: Int? = 3

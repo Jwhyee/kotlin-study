@@ -1,4 +1,4 @@
-package example.inflearn_starter.chap1;
+package example.inflearn_starter.chap1.lect2;
 
 import org.jetbrains.annotations.Nullable;
 
