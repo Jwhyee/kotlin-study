@@ -45,14 +45,12 @@ public class ControlFlowTest {
     }
 
     private String getGradeWithSwitchExpression (int score) {
-        String result = switch (score / 10) {
+        return switch (score / 10) {
             case 9 -> "A";
             case 8 -> "B";
             case 7 -> "C";
             default -> "D";
         };
-
-        return result;
     }
 
     private boolean startsWithA(Object obj) {
