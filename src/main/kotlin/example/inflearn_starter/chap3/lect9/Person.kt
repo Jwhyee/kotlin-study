@@ -14,7 +14,8 @@ class Person(
         if(age <= 0) throw IllegalArgumentException("나이는 ${age}일 수 없습니다.")
         println("초기화 블록")
     }
-    val isAdult:Boolean
+
+    val isAdult: Boolean
         get() = this.age >= 20
 
     val uppercaseName: String
